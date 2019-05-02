@@ -9,12 +9,12 @@ import { Cel } from './cel/cel';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'Mastermind';
-
+  title = 'Test';
   colors = COLORS;
+  row:Row = new Row();
 
-  row: Row;
   onSelect(cel: Cel): void {
-    this.row.cels[] = cel;
+    console.log(this.row);
+    this.row.cels.push(cel);
   }
 }
