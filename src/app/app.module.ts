@@ -1,16 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CelComponent } from './cel/cel.component';
+import { RowComponent } from './row/row.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CelComponent,
+    RowComponent,
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
